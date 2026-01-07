@@ -503,18 +503,15 @@ const SecurityStudyGuide = () => {
           </p>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800/10">
-          <div className="flex items-center justify-center gap-2 text-gray-600">
-            <Shield className="w-4 h-4 text-blue-600" />
-            <p className="text-sm">
-              Développé avec expertise par{' '}
-              <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Mohamed AZZAM
-              </span>
+        <div className="mt-12 pt-6 border-t border-gray-800/20">
+          <div className="text-center space-y-2">
+            <p className="text-xs font-mono text-gray-500 uppercase tracking-wider">
+              [DEVELOPED BY] MOHAMED AZZAM
             </p>
-            <Shield className="w-4 h-4 text-purple-600" />
+            <p className="text-xs font-mono text-gray-400">
+              © 2026 • SECURITY_STUDY_GUIDE
+            </p>
           </div>
-          <p className="text-xs text-gray-400 mt-2">© 2026 - Guide d'étude en Sécurité Informatique</p>
         </div>
       </div>
 
