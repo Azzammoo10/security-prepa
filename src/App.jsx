@@ -315,7 +315,7 @@ const SecurityStudyGuide = () => {
           <div className="flex items-center justify-center gap-4 mb-4">
             <Terminal className="w-12 h-12 text-cyan-400 animate-pulse" />
             <h1 className="text-5xl font-black bg-gradient-to-r from-cyan-400 via-green-400 to-cyan-400 bg-clip-text text-transparent">
-              CYBERSECURITY PRO
+              CYBERSECURITY STUDY GUIDE
             </h1>
             <Fingerprint className="w-12 h-12 text-green-400 animate-pulse" />
           </div>
@@ -499,7 +499,7 @@ const SecurityStudyGuide = () => {
         {/* Footer */}
         <div className="mt-8 text-center">
           <p className="text-gray-600 font-mono text-xs">
-            [SYSTÈME_ACTIVÉ] • VERSION_2024 • SÉCURITÉ_MAXIMALE
+            [SYSTÈME_ACTIVÉ] • VERSION_2026 • SÉCURITÉ_MAXIMALE
           </p>
         </div>
 
@@ -514,7 +514,7 @@ const SecurityStudyGuide = () => {
             </p>
             <Shield className="w-4 h-4 text-purple-600" />
           </div>
-          <p className="text-xs text-gray-400 mt-2">© 2024 - Guide d'étude en Sécurité Informatique</p>
+          <p className="text-xs text-gray-400 mt-2">© 2026 - Guide d'étude en Sécurité Informatique</p>
         </div>
       </div>
 
