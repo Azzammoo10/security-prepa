@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Book, Shield, Lock, AlertTriangle, Network, Bug, Eye, Server, Users, CheckCircle, Terminal, Cpu, Fingerprint } from 'lucide-react';
+import RiskMatrix from './RiskMatrix';
 
 const SecurityStudyGuide = () => {
   const [activeChapter, setActiveChapter] = useState(1);
@@ -126,15 +127,12 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "menace",
-          title: "👹 Menace (تهديد - tahdi) = Exploitation",
-          content: "Agent (personne, logiciel, événement) qui cherche à exploiter (يستغل) une vulnérabilité pour nuire (يضر - ydar) au système",
+          title: "👹 Menace  = Exploitation de la Vulnerabilite",
+          content: "C’est l’exploitation d’une vulnérabilité par un acteur malveillant.• Elle peut être intentionnelle (attaque,piratage) ou non intentionnelle (erreur humaine)",
           examples: [
             "👨‍💻 Pirate informatique (Hacker): black hat, script kiddie",
             "🦠 Virus/Malware: programme malveillant automatisé",
             "⚡ Coupure de courant: menace environnementale",
-            "👔 Employé malveillant: insider threat, vol de données",
-            "🌊 Catastrophe naturelle: inondation, incendie",
-            "🕵️ APT: Advanced Persistent Threat (attaque ciblée longue durée)"
           ],
           formula: "Menace = Intention malveillante + Capacité d'action + Opportunité"
         },
@@ -153,77 +151,9 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "matrice",
-          title: "📊 Matrice des Risques 5×5",
-          content: "Un tableau simple pour savoir quels risques traiter en premier",
-          examples: [
-            "🎯 C'est quoi?",
-            "  • Un tableau qui croise 2 choses:",
-            "  • Horizontal (X): À quelle fréquence ça peut arriver?",
-            "  • Vertical (Y): Si ça arrive, c'est grave comment?",
-            "",
-            "📏 L'échelle de 1 à 5:",
-            "",
-            "Probabilité (combien de fois?):",
-            "  1 = Presque jamais (1 fois tous les 10 ans)",
-            "  2 = Rarement (1 fois tous les 5 ans)",
-            "  3 = Parfois (1 fois par an)",
-            "  4 = Souvent (plusieurs fois par an)",
-            "  5 = Très souvent (tous les mois)",
-            "",
-            "Impact (c'est grave?):",
-            "  1 = Pas grave (petit bug, vite réglé)",
-            "  2 = Moyen (quelques heures perdues)",
-            "  3 = Embêtant (journée de travail perdue)",
-            "  4 = Grave (perte d'argent, clients mécontents)",
-            "  5 = Catastrophe (fermeture entreprise possible)",
-            "",
-            "🎨 Les couleurs:",
-            "",
-            "🟢 VERT (1-4): Tranquille",
-            "  • C'est pas grave OU ça arrive jamais",
-            "  • Exemple: Bug d'affichage rare",
-            "  • Action: On surveille, c'est tout",
-            "",
-            "🟡 JAUNE (5-12): Attention",
-            "  • Commence à être embêtant",
-            "  • Exemple: Panne serveur 1 fois/an",
-            "  • Action: On prévoit une solution",
-            "",
-            "🟠 ORANGE (13-19): Urgent",
-            "  • Faut s'en occuper vite!",
-            "  • Exemple: Backup qui marche pas bien",
-            "  • Action: On met un plan en place",
-            "",
-            "🔴 ROUGE (20-25): ALERTE!",
-            "  • Danger maximum! À traiter MAINTENANT",
-            "  • Exemple: Pas d'antivirus + site web public",
-            "  • Action: Tout arrêter jusqu'à correction",
-            "",
-            "💡 Exemples concrets:",
-            "",
-            "Email de phishing:",
-            "  • Probabilité: 4 (arrive souvent)",
-            "  • Impact: 5 (peut voler toutes les données)",
-            "  • Score: 4 × 5 = 20 → 🔴 ROUGE (URGENT!)",
-            "",
-            "Souris qui marche mal:",
-            "  • Probabilité: 2 (rarement)",
-            "  • Impact: 1 (juste changer la souris)",
-            "  • Score: 2 × 1 = 2 → 🟢 VERT (pas grave)",
-            "",
-            "Serveur qui plante:",
-            "  • Probabilité: 3 (1 fois par an)",
-            "  • Impact: 4 (clients bloqués)",
-            "  • Score: 3 × 4 = 12 → 🟡 JAUNE (à prévoir)",
-            "",
-            "🎯 Comment l'utiliser?",
-            "  1. Liste tous tes risques",
-            "  2. Pour chacun, demande: \"Ça arrive souvent?\" (1-5)",
-            "  3. Puis: \"C'est grave?\" (1-5)",
-            "  4. Multiplie les 2 chiffres",
-            "  5. Traite d'abord les rouges, puis oranges, puis jaunes"
-          ],
-          formula: "Score = Fréquence × Gravité | Rouge (≥20) = URGENT | Orange (13-19) = Vite | Jaune (5-12) = Bientôt"
+          title: "📊 Matrice des Risques 5×5 Interactive",
+          isInteractive: true,
+          component: RiskMatrix
         },
         {
           id: "types-attaques",
@@ -816,8 +746,8 @@ const SecurityStudyGuide = () => {
           content: "Pentesting = Simuler des attaques réelles afin d'évaluer le niveau de sécurité des systèmes d'information et d'identifier les vulnérabilités avant qu'elles ne soient exploitées par des attaquants",
           examples: [
             "💡 Analogie simple:",
-            "  • B7al ila jiti t7ell bab dyal dar dyalek bach tchouf wach sahl ytsra9",
-            "  • Kanqelbou 3la lmochkil 9bel ma chi hacker yl9ah",
+            "  • Kartl3b dawr dyal hacker (éthique) f système bash tchouf lmochkil 9bel ma ykoun chi hacker 7a9i9i",
+            "  • Une fois nl9aw probleme kandiro rapport o n9tr7o solutions, bax teams responsables y9dro y7mio system dyalhom",
             "",
             "🎯 Objectif principal:",
             "  • Trouver les failles AVANT les vrais hackers",
@@ -865,12 +795,10 @@ const SecurityStudyGuide = () => {
             "1️⃣ PLANIFICATION:",
             "  • Définir les objectifs du test",
             "  • Établir le périmètre (quoi tester?)",
-            "  • Accord juridique (autorisation écrite)",
             "  • Exemple: Tester uniquement le site web, pas le réseau interne",
             "",
             "2️⃣ RECONNAISSANCE:",
             "  • Collecter des informations sur la cible",
-            "  • Google, réseaux sociaux, WHOIS, Shodan",
             "  • Exemple: Trouver les emails des employés sur LinkedIn",
             "  • But: Connaître le système avant de l'attaquer",
             "",
@@ -1189,15 +1117,20 @@ const SecurityStudyGuide = () => {
                   {activeChapterData.title}
                 </h2>
               </div>
+              {!activeChapterData.isInteractive && (
               <div className="text-right">
                 <div className="text-xs font-mono text-gray-500">SECTIONS</div>
-                <div className="text-2xl font-bold text-cyan-400">{activeChapterData.sections.length}</div>
+                <div className="text-2xl font-bold text-cyan-400">{activeChapterData.sections?.length || 0}</div>
               </div>
+              )}
             </div>
 
-            {/* Sections */}
+            {/* Sections or Interactive Component */}
+            {activeChapterData.isInteractive && activeChapterData.component ? (
+              <activeChapterData.component />
+            ) : (
             <div className="space-y-4">
-              {activeChapterData.sections.map((section, idx) => (
+              {activeChapterData.sections?.map((section, idx) => (
                 <div
                   key={section.id}
                   className="group relative bg-gray-800/50 rounded-xl border border-gray-700 hover:border-cyan-500/50 transition-all overflow-hidden"
@@ -1247,6 +1180,7 @@ const SecurityStudyGuide = () => {
                       )}
                       
                       {/* Exemples */}
+                      {section.examples && (
                       <div className="space-y-3">
                         <div className="text-xs font-mono text-gray-400 mb-4 uppercase tracking-wider flex items-center gap-2">
                           <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
@@ -1305,11 +1239,20 @@ const SecurityStudyGuide = () => {
                           })}
                         </div>
                       </div>
+                      )}
+                      
+                      {/* Section interactive pour la matrice */}
+                      {section.isInteractive && section.component && (
+                        <div className="mt-4">
+                          <section.component />
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
               ))}
             </div>
+            )}
           </div>
         </div>
 
