@@ -19,7 +19,7 @@ const SecurityStudyGuide = () => {
       sections: [
         {
           id: "si",
-          title: "🖥️ SI - Système d'Information",
+          title: "🖥️ SI - Système d'Information ❌ Non Inclus",
           content: "Ensemble organisé de ressources (matériel, logiciel, données, procédures, personnes) permettant de collecter, traiter, stocker et diffuser l'information dans une organisation",
           examples: [
             "💻 Matériel: Serveurs, postes de travail, équipements réseau",
@@ -46,7 +46,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "classification",
-          title: "📋 Classification Sécurité",
+          title: "📋 Classification Sécurité ❌ Non Inclus",
           content: "4 couches de protection complémentaires formant une défense en profondeur (Defense in Depth)",
           examples: [
             "🏢 Sécurité Physique:",
@@ -73,7 +73,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "cyberattaques",
-          title: "⚠️ Cyberattaques Courantes",
+          title: "⚠️ Cyberattaques Courantes ❌ Non Inclus",
           content: "Panorama des menaces cyber les plus fréquentes en 2024-2026",
           examples: [
             "🎣 Phishing (Hameçonnage):",
@@ -157,7 +157,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "types-attaques",
-          title: "🎯 4 Types d'Attaques",
+          title: "🎯 4 Types d'Attaques ❌ Non Inclus",
           content: "Classification selon l'objectif et l'impact sur les ressources du système",
           examples: [
             "🚫 INTERRUPTION (Disponibilité):",
@@ -196,7 +196,7 @@ const SecurityStudyGuide = () => {
       sections: [
         {
           id: "candi",
-          title: "🎯 CANDI - Les 5 Piliers",
+          title: "🎯 CANDI - Les 5 Piliers ",
           content: "Objectifs fondamentaux de la sécurité informatique. Acronyme essentiel à mémoriser : CANDI ou CIA/DIC en anglais",
           examples: [
             "🔒 CONFIDENTIALITÉ:",
@@ -267,7 +267,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "attaques-candi",
-          title: "🎯 Attaques par Fonction CANDI",
+          title: "🎯 Attaques par Fonction CANDI ",
           content: "Cartographie des attaques selon le pilier de sécurité ciblé",
           examples: [
             "🔒 Attaques contre CONFIDENTIALITÉ:",
@@ -308,7 +308,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "protections",
-          title: "🛡️ Moyens de Protection CANDI",
+          title: "🛡️ Moyens de Protection CANDI ",
           content: "Contre-mesures adaptées à chaque pilier de sécurité",
           examples: [
             "🔒 Protéger la CONFIDENTIALITÉ:",
@@ -359,7 +359,7 @@ const SecurityStudyGuide = () => {
       sections: [
         {
           id: "intro-crypto",
-          title: "🔐 1. Cryptographie",
+          title: "🔐 1. Cryptographie ❌ Non Inclus",
           content: "La cryptographie permet de protéger les données en les rendant illisibles pour les personnes non autorisées",
           examples: [
             "📊 Deux grands types de chiffrement:",
@@ -417,7 +417,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "hash",
-          title: "# 2. Hachage (Hashing)",
+          title: "# 2. Hachage (Hashing) ❌ Non Inclus",
           content: "Le hachage transforme un message en une empreinte unique (hash) de longueur fixe",
           examples: [
             "🔢 Fonctions de hachage:",
@@ -441,7 +441,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "signature",
-          title: "✍️ 3. Signature Numérique (ou électronique ou digitale)",
+          title: "✍️ 3. Signature Numérique (ou électronique ou digitale) ❌ Non Inclus",
           content: "La signature numérique prouve l'identité de l'expéditeur et l'intégrité du message",
           examples: [
             "🔐 Principe:",
@@ -457,7 +457,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "ca",
-          title: "🏛️ 4. Autorité de Certification (CA)",
+          title: "🏛️ 4. Autorité de Certification (CA) ❌ Non Inclus",
           content: "Une CA (Certification Authority) est un organisme de confiance qui certifie les clés publiques des utilisateurs",
           examples: [
             "🔑 Rôle de la CA:",
@@ -480,7 +480,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "pki",
-          title: "🏢 5. PKI (Public Key Infrastructure)",
+          title: "🏢 5. PKI (Public Key Infrastructure) ❌ Non Inclus",
           content: "C'est le système qui gère les certificats et les clés publiques dans une organisation",
           examples: [
             "🏗️ Composants principaux:",
@@ -501,7 +501,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "kerberos",
-          title: "🎫 Kerberos - Authentification",
+          title: "🎫 Kerberos - Authentification ❌ Non Inclus",
           content: "Système d'authentification qui permet de vérifier ton identité sans envoyer ton mot de passe sur le réseau",
           examples: [
             "🎯 C'est quoi Kerberos?",
@@ -564,7 +564,7 @@ const SecurityStudyGuide = () => {
       sections: [
         {
           id: "demarche",
-          title: "🎯 Démarche de Gestion des Risques",
+          title: "🎯 Démarche de Gestion des Risques ❌ Non Inclus",
           content: "Une démarche typique de la gestion des risques peut se baser sur EBIOS et la famille ISO 27000",
           examples: [
             "📊 Approche structurée:",
@@ -576,7 +576,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "ebios",
-          title: "📋 EBIOS - Méthodologie",
+          title: "📋 EBIOS - Méthodologie ❌ Non Inclus",
           content: "EBIOS (Expression des Besoins et Identification des Objectifs de Sécurité) est une méthodologie d'analyse et de gestion des risques utilisée pour protéger les systèmes d'information",
           examples: [
             "🎯 Objectifs principaux:",
@@ -701,7 +701,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "types",
-          title: "📊 Types de Pentesting",
+          title: "📊 Types de Pentesting ❌ Non Inclus",
           content: "Classification selon l'origine de l'attaque et la cible",
           examples: [
             "🏢 Test INTERNE (Inside):",
@@ -732,7 +732,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "phases",
-          title: "🔄 Les 6 Phases du Pentest",
+          title: "🔄 Les 6 Phases du Pentest ❌ Non Inclus",
           content: "Méthodologie structurée pour mener un test d'intrusion efficace",
           examples: [
             "1️⃣ PLANIFICATION:",
@@ -773,7 +773,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "outils",
-          title: "🛠️ Outils du Pentester",
+          title: "🛠️ Outils du Pentester ❌ Non Inclus",
           content: "Arsenal d'outils pour chaque phase du pentesting",
           examples: [
             "🐉 KALI LINUX:",
@@ -817,7 +817,7 @@ const SecurityStudyGuide = () => {
         },
         {
           id: "exemples",
-          title: "💡 Exemples Pratiques",
+          title: "💡 Exemples Pratiques ❌ Non Inclus",
           content: "Scénarios concrets de pentesting",
           examples: [
             "🎯 Exemple 1: Test d'application web",
